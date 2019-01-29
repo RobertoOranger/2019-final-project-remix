@@ -2,7 +2,7 @@ pragma solidity ^0.5.0;
 
 //@dev CertificateFactory can create new contract Certificates using Certificate.sol, 
 //where there are the state variable definition of Certificate: name, date of Birth,
-// type of degree and date of degree. Insert date in this format ddmmyyy, only number.
+// type of degree and date of degree. Insert date in this format ddmmyyyy, only numbers.
 
 //@ contract child
 contract Certificate {
