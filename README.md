@@ -11,7 +11,7 @@ Unfurtunately i have not made a front end interface. Sorry. But you can compile 
 
 1) Start Ganache at 8545 port.
 2) open remix.ethereum.org
-3) copy the code ( the code is in the file CertificateFactory.sol file )
+3) copy the code ( the code is in the file CertificateFactory.sol  )
 4) in remix: select compile and "select new compiler version" version 0.5.0. 
 5) Select CertificateFactory and click Compile
 6) Select Run, Environment and choose Web3provider. 
