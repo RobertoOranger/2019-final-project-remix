@@ -1,5 +1,5 @@
 # 2019-final-project-remix
-This is a simple project for study an application of Contract Factory. A Factory is a contract that creates other contracts.
+This is a simple project to study an application of Contract Factory. A Factory is a contract that creates other contracts.
 
 User Stories: How to prove that your degree or certificate is true?hot to prevent false certificates? Istitutions, Schools or Universities can register details of degrees using CertificateFactory to create contracts for their students. Only the Istitutions can create it, because they are the owners of CertificateFactory.
 
