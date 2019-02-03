@@ -41,7 +41,7 @@ contract CertificateFactory {
     }
 
      //Event of address of new Certificate created
-    event LogCertificateCreated (address contractAddress);
+    event LogCertificateCreated (address newCertificate);
     
     function createCert( string memory name, uint dateBirth, string memory degree, uint dateCert) 
 
