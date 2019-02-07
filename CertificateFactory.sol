@@ -71,7 +71,7 @@ contract CertificateFactory {
      //or the address of new Certificate. But with web3 whe can use ash of transaction
      //to  obtain this information
 
-    address of  new contract 
+    //address of  new contract 
     function getDeployedCertificate() public view returns (address[] memory) {
         return registeredCert;
 
