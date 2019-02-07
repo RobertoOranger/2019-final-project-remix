@@ -26,7 +26,7 @@ contract CertificateFactory {
     
     //@dev  owner of CertificateFactory 
     address public owner;
-    owner = msg.sender;
+    
 
     //@dev we store addresses of new contract children ( Certificate.sol) that CertificateFactory create
 
@@ -34,7 +34,7 @@ contract CertificateFactory {
 
 
     //@dev Only owner can register new contract
-    modifier OnlyOwner() {
+    modifier onlyOwner() {
     require(msg.sender == owner,"You do not have permission");
     _;
 
@@ -46,8 +46,8 @@ contract CertificateFactory {
     function createCert( string memory name, uint dateBirth, string memory degree, uint dateCert) 
 
         
-         public
-         returns(address)  OnlyOwner {
+         public onlyOwner
+         returns(address)   {
          
          
         
