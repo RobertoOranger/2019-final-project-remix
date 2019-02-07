@@ -25,7 +25,7 @@ contract Certificate {
 contract CertificateFactory {
     
     //@dev  owner of CertificateFactory 
-    address public owner;
+    address public owner = msg.sender;
     
 
     //@dev we store addresses of new contract children ( Certificate.sol) that CertificateFactory create
