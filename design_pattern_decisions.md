@@ -10,6 +10,6 @@ Gas limit block can revert the transaction to create a certificate contract.
 
 The addresses of Certificate contracts ( "contract child") are stored in an array. But it is expensive. When the number of certificates increases, the better solution is a mapping.
 
-
+Is it possible to reduce storage (it is expensive!) to reduce uint about date using uint32, not uint (it is 256 bits).
 
 
