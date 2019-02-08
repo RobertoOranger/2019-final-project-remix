@@ -6,14 +6,15 @@ pragma solidity ^0.5.0;
 
 //@ contract child
 contract Certificate {
-       
+   //uint32 because it is adequate  to store dateBirth and dateCert (storing is expensive!)    
+    
     string name;
-    uint dateBirth;
+    uint32 dateBirth;
     string degree;
-    uint dateCert;
+    uint32 dateCert; 
     
     
-    constructor (string memory name_,  uint dateBirth_, string memory degree_, uint dateCert_) public {
+    constructor (string memory name_,  uint32 dateBirth_, string memory degree_, uint32 dateCert_) public {
         name = name_;
         dateBirth = dateBirth_;
         degree = degree_;                                   
@@ -43,7 +44,7 @@ contract CertificateFactory {
      //Event of address of new Certificate created
     event LogCertificateCreated (address newCertificate);
     
-    function createCert( string memory name, uint dateBirth, string memory degree, uint dateCert) 
+    function createCert( string memory name, uint32 dateBirth, string memory degree, uint32 dateCert) 
 
         
          public onlyOwner
